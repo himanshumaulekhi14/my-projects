@@ -1,0 +1,43 @@
+body {
+  background-color: #000;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.cell {
+  background-color: black;
+  border: 2px solid white;
+  font-size: 64px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cell.taken {
+  pointer-events: none;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
